@@ -1,0 +1,42 @@
+[gd_scene load_steps=6 format=3 uid="uid://bgnaviuhylyy1"]
+
+[ext_resource type="Texture2D" uid="uid://cs1nmgyamjrfb" path="res://icon.svg" id="1_i3gxa"]
+[ext_resource type="Script" path="res://MouseFollower.gd" id="2_ubld4"]
+[ext_resource type="Script" path="res://NodeAvoider.gd" id="3_rhtrw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yvxsj"]
+size = Vector2(118, 122)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vh2mk"]
+size = Vector2(124, 120)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="cat_hand" type="Sprite2D" parent="."]
+position = Vector2(278, 231)
+texture = ExtResource("1_i3gxa")
+script = ExtResource("2_ubld4")
+
+[node name="RigidBody2D" type="RigidBody2D" parent="cat_hand"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="cat_hand/RigidBody2D"]
+position = Vector2(-1, 1)
+scale = Vector2(1.01426, 1)
+shape = SubResource("RectangleShape2D_yvxsj")
+
+[node name="ricky" type="Sprite2D" parent="." node_paths=PackedStringArray("objectToAvoid")]
+modulate = Color(0.411765, 0.25098, 0.266667, 1)
+position = Vector2(724, 86)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_i3gxa")
+script = ExtResource("3_rhtrw")
+speed = 100.0
+objectToAvoid = NodePath("../cat_hand")
+
+[node name="RigidBody2D" type="RigidBody2D" parent="ricky"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ricky/RigidBody2D"]
+shape = SubResource("RectangleShape2D_vh2mk")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(578, 327)
