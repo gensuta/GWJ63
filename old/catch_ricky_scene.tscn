@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://bgnaviuhylyy1"]
+[gd_scene load_steps=7 format=3 uid="uid://bgnaviuhylyy1"]
 
-[ext_resource type="Texture2D" uid="uid://cs1nmgyamjrfb" path="res://icon.svg" id="1_i3gxa"]
-[ext_resource type="Script" path="res://MouseFollower.gd" id="2_ubld4"]
-[ext_resource type="Script" path="res://NodeAvoider.gd" id="3_rhtrw"]
+[ext_resource type="Texture2D" uid="uid://cs1nmgyamjrfb" path="res://old/icon.svg" id="1_i3gxa"]
+[ext_resource type="Script" path="res://old/MouseFollower.gd" id="2_ubld4"]
+[ext_resource type="Script" path="res://old/NodeAvoider.gd" id="3_rhtrw"]
+[ext_resource type="PackedScene" uid="uid://1a80gg2uw4v0" path="res://input settings/input_settings.tscn" id="4_lqtfg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yvxsj"]
 size = Vector2(118, 122)
@@ -40,3 +41,8 @@ shape = SubResource("RectangleShape2D_vh2mk")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(578, 327)
+
+[node name="GUI" type="CanvasLayer" parent="."]
+
+[node name="input_settings" parent="." instance=ExtResource("4_lqtfg")]
+visible = false
