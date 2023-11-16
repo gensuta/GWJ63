@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="GWJ63"
-run/main_scene="res://infinite runner/infinite_runner.tscn"
+run/main_scene="res://puzzles/row align/row_align.tscn"
 config/features=PackedStringArray("4.1", "GL Compatibility")
 config/icon="res://old/icon.svg"
 

@@ -1,0 +1,41 @@
+[gd_scene load_steps=3 format=3 uid="uid://bgd0b48j5c08h"]
+
+[ext_resource type="Script" path="res://puzzles/row align/alignable_grid.gd" id="1_kp6ks"]
+[ext_resource type="Script" path="res://puzzles/row align/row_align_player.gd" id="2_0gt6c"]
+
+[node name="row_align" type="Node2D"]
+position = Vector2(615, 323)
+script = ExtResource("1_kp6ks")
+grid_size = 3
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -249.0
+offset_top = -153.0
+offset_right = 249.0
+offset_bottom = 153.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 200
+theme_override_constants/margin_top = 100
+theme_override_constants/margin_right = 200
+theme_override_constants/margin_bottom = 100
+
+[node name="GridContainer" type="GridContainer" parent="PanelContainer/MarginContainer"]
+layout_mode = 2
+theme_override_constants/h_separation = 5
+theme_override_constants/v_separation = 5
+columns = 3
+script = ExtResource("2_0gt6c")
+
+[connection signal="move_down" from="PanelContainer/MarginContainer/GridContainer" to="." method="_on_grid_container_move_down"]
+[connection signal="move_left" from="PanelContainer/MarginContainer/GridContainer" to="." method="_on_grid_container_move_left"]
+[connection signal="move_right" from="PanelContainer/MarginContainer/GridContainer" to="." method="_on_grid_container_move_right"]
+[connection signal="move_up" from="PanelContainer/MarginContainer/GridContainer" to="." method="_on_grid_container_move_up"]
