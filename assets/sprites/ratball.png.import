@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://g5puhm0bph0r"
-path="res://.godot/imported/ricky_caught.png-956eec1de903b8d80040fab0163ec898.ctex"
+uid="uid://dn8mt74lf8r7d"
+path="res://.godot/imported/ratball.png-94141e4b79cfc59e623e1ab724111e0d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/ricky_caught.png"
-dest_files=["res://.godot/imported/ricky_caught.png-956eec1de903b8d80040fab0163ec898.ctex"]
+source_file="res://assets/sprites/ratball.png"
+dest_files=["res://.godot/imported/ratball.png-94141e4b79cfc59e623e1ab724111e0d.ctex"]
 
 [params]
 

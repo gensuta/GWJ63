@@ -1,0 +1,91 @@
+[gd_scene load_steps=16 format=3 uid="uid://bi57oon6rep4c"]
+
+[ext_resource type="Texture2D" uid="uid://b6my031nsx6yy" path="res://assets/sprites/alivecat_anims/alivecat_fall_1.png" id="1_4nr28"]
+[ext_resource type="Texture2D" uid="uid://dh7huejroc4jo" path="res://assets/sprites/alivecat_anims/alivecat_fall_2.png" id="2_4usd0"]
+[ext_resource type="Texture2D" uid="uid://b32ygabfibys2" path="res://assets/sprites/alivecat_anims/alivecat_fall_3.png" id="3_w6tm6"]
+[ext_resource type="Texture2D" uid="uid://bj4wl8ucwne0q" path="res://assets/sprites/alivecat_anims/alivecat_fall_4.png" id="4_wqru8"]
+[ext_resource type="Texture2D" uid="uid://c6u3ndadcxhs" path="res://assets/sprites/alivecat_anims/alivecat_idle_1.png" id="5_qc2tt"]
+[ext_resource type="Texture2D" uid="uid://kdws204pwj88" path="res://assets/sprites/alivecat_anims/alivecat_idle_2.png" id="6_i0xkg"]
+[ext_resource type="Texture2D" uid="uid://dvtv3ng8ftove" path="res://assets/sprites/alivecat_anims/alivecat_jump_1.png" id="7_37286"]
+[ext_resource type="Texture2D" uid="uid://kkhiug6cah3r" path="res://assets/sprites/alivecat_anims/alivecat_jump_2.png" id="8_4bujp"]
+[ext_resource type="Texture2D" uid="uid://dkyvf6bhyon0j" path="res://assets/sprites/alivecat_anims/alivecat_jump_3.png" id="9_q36k8"]
+[ext_resource type="Texture2D" uid="uid://b0inl42e75ysn" path="res://assets/sprites/alivecat_anims/alivecat_jump_4.png" id="10_473oy"]
+[ext_resource type="Texture2D" uid="uid://dkqelnkj0vli7" path="res://assets/sprites/alivecat_anims/alivecat_jump_land.png" id="11_aq1wo"]
+[ext_resource type="Texture2D" uid="uid://8el5k3iwtcgs" path="res://assets/sprites/alivecat_anims/alivecat_run_1.png" id="12_md0l0"]
+[ext_resource type="Texture2D" uid="uid://cc7v2ip5jypfx" path="res://assets/sprites/alivecat_anims/alivecat_run_2.png" id="13_tdyjm"]
+[ext_resource type="Texture2D" uid="uid://bk00qg84c7b17" path="res://assets/sprites/alivecat_anims/alivecat_run_3.png" id="14_df1ux"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3qeai"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_4nr28")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_4usd0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_w6tm6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_wqru8")
+}],
+"loop": true,
+"name": &"fall",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_qc2tt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_i0xkg")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_37286")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_4bujp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_q36k8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_473oy")
+}],
+"loop": true,
+"name": &"jump",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_aq1wo")
+}],
+"loop": true,
+"name": &"land",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_md0l0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_tdyjm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_df1ux")
+}],
+"loop": true,
+"name": &"run",
+"speed": 8.0
+}]
+
+[node name="alivecat_anim" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_3qeai")
+animation = &"run"
+frame_progress = 0.334567

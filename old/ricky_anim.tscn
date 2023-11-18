@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://c44lm044cbvy5"]
 
-[ext_resource type="Texture2D" uid="uid://g5puhm0bph0r" path="res://assets/sprites/ricky_caught.png" id="1_sivso"]
-[ext_resource type="Texture2D" uid="uid://cplrv2dsu6iev" path="res://assets/sprites/ricky_run_1.png" id="2_1xere"]
-[ext_resource type="Texture2D" uid="uid://b4iwe1672fcjd" path="res://assets/sprites/ricky_run_2.png" id="3_56etm"]
+[ext_resource type="Texture2D" uid="uid://g5puhm0bph0r" path="res://assets/sprites/old/ricky_caught.png" id="1_sivso"]
+[ext_resource type="Texture2D" uid="uid://cplrv2dsu6iev" path="res://assets/sprites/old/ricky_run_1.png" id="2_1xere"]
+[ext_resource type="Texture2D" uid="uid://b4iwe1672fcjd" path="res://assets/sprites/old/ricky_run_2.png" id="3_56etm"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_uafbp"]
 animations = [{

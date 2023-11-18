@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cplrv2dsu6iev"
-path="res://.godot/imported/ricky_run_1.png-b76c7eb9276b58304d0b5ca8bda34b0c.ctex"
+uid="uid://c6u3ndadcxhs"
+path="res://.godot/imported/alivecat_idle_1.png-ff6ca152f7d08d7d222e956bacc29422.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/ricky_run_1.png"
-dest_files=["res://.godot/imported/ricky_run_1.png-b76c7eb9276b58304d0b5ca8bda34b0c.ctex"]
+source_file="res://assets/sprites/alivecat_anims/alivecat_idle_1.png"
+dest_files=["res://.godot/imported/alivecat_idle_1.png-ff6ca152f7d08d7d222e956bacc29422.ctex"]
 
 [params]
 

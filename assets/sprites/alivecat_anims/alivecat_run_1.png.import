@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bnvfhgjd330yf"
-path="res://.godot/imported/cat_paw.png-c8498bd0026498f550a0713f27f3e7a7.ctex"
+uid="uid://8el5k3iwtcgs"
+path="res://.godot/imported/alivecat_run_1.png-85641fe31b36bcf66638825ea8c25280.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/cat_paw.png"
-dest_files=["res://.godot/imported/cat_paw.png-c8498bd0026498f550a0713f27f3e7a7.ctex"]
+source_file="res://assets/sprites/alivecat_anims/alivecat_run_1.png"
+dest_files=["res://.godot/imported/alivecat_run_1.png-85641fe31b36bcf66638825ea8c25280.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b4iwe1672fcjd"
-path="res://.godot/imported/ricky_run_2.png-c9d417ef49adc37daf940d3a67085383.ctex"
+uid="uid://g5puhm0bph0r"
+path="res://.godot/imported/ricky_caught.png-d66846beefdf3c87d1d4bce50345adb7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/ricky_run_2.png"
-dest_files=["res://.godot/imported/ricky_run_2.png-c9d417ef49adc37daf940d3a67085383.ctex"]
+source_file="res://assets/sprites/old/ricky_caught.png"
+dest_files=["res://.godot/imported/ricky_caught.png-d66846beefdf3c87d1d4bce50345adb7.ctex"]
 
 [params]
 
