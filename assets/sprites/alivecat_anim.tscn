@@ -67,6 +67,14 @@ animations = [{
 "texture": ExtResource("11_aq1wo")
 }],
 "loop": true,
+"name": &"jump_startup",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_aq1wo")
+}],
+"loop": true,
 "name": &"land",
 "speed": 8.0
 }, {
@@ -87,5 +95,5 @@ animations = [{
 
 [node name="alivecat_anim" type="AnimatedSprite2D"]
 sprite_frames = SubResource("SpriteFrames_3qeai")
-animation = &"run"
-frame_progress = 0.334567
+animation = &"jump"
+frame_progress = 0.261077
